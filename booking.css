@@ -6,78 +6,75 @@ body {
 }
 
 /* Navbar */
-.navbar {
+nav {
+  background-color: rgba(254, 243, 27, 0.56);
   display: flex;
-  justify-content: space-between;
+   flex-wrap: nowrap;         /* allows items to wrap */
+  justify-content: space-around;
+  padding: clamp(5px, 2vw, 15px);  /* shrink as screen shrinks */
   align-items: center;
-  background: #fffacd;
-  padding: 15px 15px;
-  border-bottom: 2px solid white;
+  /* padding: 15px 30px; */
+  /* padding: 0; remove side padding so items stretch fully */
+  position: relative;
 }
-.menu-center {
+
+nav .nav-links {
   display: flex;
-  justify-content: center;
-  flex: 1;             /* expands to center the items */
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 25px;           /* spacing between items */
+   flex-wrap: wrap;
+  justify-content: space-around;
+   flex: 1; /* take full width */
+   margin: 0 40px; /* space around links block */
+gap: clamp(10px, 2vw, 30px);
+  align-items: center;
 }
 
-.menu-center a {
+nav a {
   text-decoration: none;
-  color: black;
-  
-}
-.nav-center {
-  display: flex;
-  justify-content: center;
-  flex: 1;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-center li {
-  margin: 0 15px;
-}
-
-.nav-center a {
-  text-decoration: none;
-  color: black;
+  color: #000;
+   font-size: clamp(12px, 1.5vw, 18px); /* scales with screen */
   font-weight: bold;
+  position: relative;
+   display: inline-block; /* keeps underline under text only */
+               /* each link takes equal width */
+  text-align: center;     /* center text inside */
+ padding: clamp(5px, 1vw, 10px) clamp(10px, 1.5vw, 20px);
+white-space: nowrap; /* don’t break to next line */
+  border-radius: 0;       /* remove rounded corners when stretched */
 }
 
-/* Booking button on right */
-.nav-right {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+bottom: 5px;  /* underline stays just below text */
+  background: #d4a762; /* golden underline */
+  transition: width 0.3s ease;
 }
 
-.nav-right li {
-  display: inline;
+nav a:hover::after {
+  width: 100%;
 }
 
-.navbar ul {
-  display: flex;
-  justify-content: center;   
-  align-items: center; 
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 20px;
+.booking-btn {
+  background: transparent;
+  color:#000 !important;
+   border: 2px solid #000;       /* black border */
+font-size: clamp(12px, 2vw, 20px);  /* scales with screen */
+  padding: clamp(5px, 1.5vw, 15px) 10px;
+  font-weight: bold;
+  border-radius: 5px;
+   flex: 0; /* prevent it from stretching like links */
+   position: relative;
+    transition: all 0.3s ease;
 }
 
-.navbar li {
-  margin-right: 20px;
-}
 
-.navbar a {
-  text-decoration: none;
-  font-size: 18px;
-  color: black;
-  font-family: "Georgia", serif;
+
+/* Remove underline for button */
+.booking-btn::after {
+  display: none !important;
 }
 
 
