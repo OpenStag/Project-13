@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paradise Hotel Booking</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    
+    <ul class="menu-center">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Cinema</a></li>
+      <li><a href="#">Food</a></li>
+      <li><a href="#">Rooms</a></li>
+    </ul>
+    <ul class="nav-right">
+      <li><a href="#" class="booking-btn">Booking</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hotel Details -->
+  <section class="hotel-info">
+  
+    <h1>Paradise Hotel</h1>
+    <p>Galle Road, Colombo 6</p>
+  </section>
+  <br></br>
+  
+  <!-- Booking Form -->
+  <section class="booking-section">
+    
+    
+    
+    
+    <h2>Your Trip</h2>
+    
+    <div class="trip-form">
+      <div>
+        <label>Check-in</label>
+        <br></br>
+        <input type="date" id="checkin">
+      </div>
+      <div>
+        <label>Check-out</label>
+        <br></br>
+        <input type="date" id="checkout">
+        
+      </div>
+    </div>
+
+    <select id="guests">
+      <option>Select Guests</option>
+      <option>1 Guest</option>
+      <option>2 Guests</option>
+      <option>3 Guests</option>
+    </select>
+
+    <!-- Room Section -->
+      
+      <div class="room-container">
+      <div class="room-text">
+        <h3>Rooms</h3>
+        <h4>Deluxe Room</h4>
+        <p>1 King bed, city view, free Wi-Fi</p>
+        <button class="price-btn" disabled>Rs. 60,000/Night</button>
+
+    <!-- Add-ons -->
+    <div class="addons">
+      <label><input type="checkbox" id="breakfast"> Breakfast included (Rs.850/day)</label><br>
+      <label><input type="checkbox" id="latecheckout"> Cafe check-out (until 2 PM, Rs.500)</label><br>
+      <label><input type="checkbox" id="shuttle"> Airport Shuttle (Rs.1000)</label>
+      
+    </div>
+    </div>
+      
+    <div class="room-image">
+      <img src="room.jpeg" alt="Deluxe Room" class="room-image" style="float: right; width: 700px; margin-left: 10px;">
+
+    </div>
+    
+    
+  </div>
+
+    <!-- Total Price -->
+    <div id="total-box">
+      <h3>Total Price: Rs. <span id="total">0</span></h3>
+    </div>
+    <div class="button-container">
+      <button class="book-btn" id="bookBtn">Book Now</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>©2025 All rights are reserved.</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

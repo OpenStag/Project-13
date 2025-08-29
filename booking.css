@@ -1,0 +1,253 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fffacd;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fffacd;
+  padding: 15px 15px;
+  border-bottom: 2px solid white;
+}
+.menu-center {
+  display: flex;
+  justify-content: center;
+  flex: 1;             /* expands to center the items */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 25px;           /* spacing between items */
+}
+
+.menu-center a {
+  text-decoration: none;
+  color: black;
+  
+}
+.nav-center {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-center li {
+  margin: 0 15px;
+}
+
+.nav-center a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* Booking button on right */
+.nav-right {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-right li {
+  display: inline;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;   
+  align-items: center; 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  font-family: "Georgia", serif;
+}
+
+
+
+.booking-btn {
+  border: 2px solid black;
+  padding: 5px 10px;
+  background: yellow;
+}
+
+/* Hotel Info */
+.hotel-info {
+  padding: 20px;
+  text-align: center;
+  
+}
+
+ 
+
+
+.room-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; /* text left, image right */
+  align-items: flex-start;        /* align top */
+  margin-bottom: 20px;
+  margin: 20px 0;
+  max-width: 5000px;
+  padding: 20px;
+  background: #fff3b0;
+  border-radius: 10px;
+}
+.room-text {
+  flex: 1; /* take available space */
+}
+
+.room-info {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.room-image img {
+  max-width: 1000px;
+  max-height: 500px;
+  border-radius: 10px;
+}
+
+.hotel-info h1 {
+  font-family: "Georgia", serif; 
+  font-size: 30px;
+  margin: 0;
+  font-style: italic;
+  font-weight: b;
+}
+
+.hotel-info p {
+  margin-top: 5px;
+}
+
+/* Booking Section */
+.booking-section {
+  background: #ffef70;
+  padding: 20px;
+}
+
+.booking-section h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.trip-form {
+  display: flex;
+  gap: 90px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.trip-form input {
+  padding: 10px;
+  border: 2px solid #999999;
+  border-radius: 5px;
+  width: 150px;
+}
+
+select {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 2px solid #999;
+  width: 200px;
+}
+
+/* Room Section */
+.room-section {
+  margin-top: 20px;
+}
+
+.room-section h3 {
+  font-size: 20px;
+}
+
+.room-section h4 {
+  font-weight: bold;
+}
+
+.price-btn {
+  background: #f5f5dc;
+  border: 2px solid #777;
+  padding: 8px 15px;
+  margin: 10px 0;
+  cursor: default;
+}
+
+.room-section img {
+  width: 200px;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Add-ons */
+.addons {
+  margin-top: 20px;
+}
+
+.addons label {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Total Price */
+#total-box {
+  margin-top: 20px;
+  padding: 15px;
+  background: #fff5a5;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.button-container {
+  display: flex;
+  justify-content: center;  /* centers the button horizontally */
+  margin-top: 20px;          /* optional spacing above */
+}
+
+/* Book Now Button */
+.book-btn {
+  background: orange;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: 3px 3px 5px #555;
+}
+
+.book-btn:hover {
+  background: darkorange;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  background: #fffacd;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+}
