@@ -66,3 +66,48 @@ nav a:hover::after {
 .booking-btn::after {
   display: none;
 }
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* Overlay to darken background */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent dark overlay */
+  z-index: 1;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  color: #fff;
+   z-index: 2;  /* above the overlay */
+  text-shadow: 2px 2px 10px rgba(255,255,255,0.8);
+   font-size: clamp(30px, 6vw, 80px); /* scales down as screen shrinks */
+  padding: clamp(5px, 1.5vw, 10px);
+}
+
+.photoBar{
+    background-color: #ffeb3b;
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+}
