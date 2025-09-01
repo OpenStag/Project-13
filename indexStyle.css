@@ -111,3 +111,15 @@ nav a:hover::after {
     padding: 30px;
     justify-content: space-around;
 }
+
+.mainAboout{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.mainAbooutDetails{
+  text-align: center;
+  font-size: 20px;
+  align-items: center;
+  padding: 30px;
+}
